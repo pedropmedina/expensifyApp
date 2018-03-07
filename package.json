@@ -1,24 +1,27 @@
 {
-  "name": "expensify_app",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "moment": "^2.21.0",
-    "react": "^16.2.0",
-    "react-addons-shallow-compare": "^15.6.2",
-    "react-dates": "^16.3.6",
-    "react-dom": "^16.2.0",
-    "react-redux": "^5.0.7",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "1.1.1",
-    "redux": "^3.7.2",
-    "styled-components": "^3.1.6",
-    "uuid": "^3.2.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+	"name": "expensify_app",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"express": "^4.16.2",
+		"moment": "^2.21.0",
+		"react": "^16.2.0",
+		"react-addons-shallow-compare": "^15.6.2",
+		"react-dates": "^16.3.6",
+		"react-dom": "^16.2.0",
+		"react-redux": "^5.0.7",
+		"react-router-dom": "^4.2.2",
+		"react-scripts": "1.1.1",
+		"redux": "^3.7.2",
+		"styled-components": "^3.1.6",
+		"uuid": "^3.2.1"
+	},
+	"scripts": {
+		"start": "node server/server.js",
+		"heroku-postbuild": "yarn run build",
+		"serve": "serve",
+		"build": "react-scripts build",
+		"test": "react-scripts test --env=jsdom",
+		"eject": "react-scripts eject"
+	}
 }

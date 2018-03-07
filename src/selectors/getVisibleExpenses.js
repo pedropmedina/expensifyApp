@@ -15,7 +15,7 @@ const getVisibleExpenses = (expenses, { text, sortBy, startDate, endDate }) => {
 				.includes(text.toLowerCase());
 
 			return startDateMatch && endDateMatch && textMatch;
-		})
+		}) // eslint-disable-next-line
 		.sort((a, b) => {
 			if (sortBy === 'date') {
 				return a.createAt < b.createAt ? 1 : -1;
